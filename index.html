@@ -7,6 +7,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
@@ -66,10 +69,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right"  data-aos-duration="1000">
             <p>Aku adalah anak yang suka sepak bola. Tapi cita citaku menjadi seorang progamming. Mungkin terlihat aneh. Tapi, itulah aku.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left"  data-aos-duration="1000"  data-aos-delay="200">
             <p>Saat ini aku sedang berjuang untuk mengejar cita-citaku. Banyak sekali tantangan demi tantangan yang aku hadapi. Tapi aku harus tetap semangat.</p>
           </div>
         </div>
@@ -94,7 +97,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="project/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" class="card-img-top" alt="Project-1" />
               <div class="card-body">
                 <p class="card-text">Perangkat lunak adalah dasar teknologi modern, memungkinkan segala hal dari aplikasi ponsel cerdas hingga keamanan siber. Pengembang merancang, kode, dan uji aplikasi, memungkinkan inovasi dan konektivitas digital. Selain itu, perangkat lunak juga memfasilitasi otomatisasi, analisis data, dan cloud computing. Ini adalah pilar penting dalam dunia teknologi saat ini.</p>
@@ -102,7 +105,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500"  data-aos-delay="100">
               <img src="project/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" class="card-img-top" alt="Project-2" />
               <div class="card-body">
                 <p class="card-text">Selain itu, perangkat lunak juga memfasilitasi otomatisasi berbagai tugas, memungkinkan analisis data yang mendalam, dan mendukung cloud computing, yang mengubah cara data dan aplikasi disimpan dan diakses. Semua ini menjadikan perangkat lunak sebagai fondasi penting bagi perkembangan teknologi saat ini.</p>
@@ -110,7 +113,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500"  data-aos-delay="200">
               <img src="project/possessed-photography-U3sOwViXhkY-unsplash.jpg" class="card-img-top" alt="Project-3" />
               <div class="card-body">
                 <p class="card-text">Kecerdasan Buatan (AI) adalah teknologi yang memungkinkan komputer untuk belajar dan menjalankan tugas seperti manusia. Dari asisten virtual hingga mobil otonom, AI memiliki berbagai aplikasi dan berpotensi mengubah cara kita hidup dan bekerja. Meskipun menjanjikan, AI juga menghadirkan tantangan etika dan keamanan.</p>
@@ -118,7 +121,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500"  data-aos-delay="300">
               <img src="project/possessed-photography-g29arbbvPjo-unsplash.jpg" class="card-img-top" alt="Project-4" />
               <div class="card-body">
                 <p class="card-text">Selain itu, AI terus berkembang dan menjadi inti dari banyak inovasi teknologi, termasuk analisis data yang mendalam, peningkatan otomatisasi dalam industri, dan kemampuan untuk membantu dalam pengambilan keputusan yang lebih cerdas. AI juga membuka pintu bagi penelitian dalam robotika, pemrosesan bahasa alami, dan pengenalan wajah, dengan dampak besar di berbagai sektor, termasuk kesehatan, keuangan, dan manufaktur. AI adalah salah satu tren utama dalam dunia teknologi modern.</p>
@@ -126,7 +129,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500"  data-aos-delay="400">
               <img src="project/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" class="card-img-top" alt="Project-5" />
               <div class="card-body">
                 <p class="card-text">Perangkat lunak adalah fondasi yang memungkinkan pengembangan dan implementasi teknologi Kecerdasan Buatan (AI), termasuk pelatihan model, pengolahan data, dan penciptaan antarmuka pengguna. Perangkat lunak memainkan peran kunci dalam penggabungan AI dalam berbagai aplikasi.</p>
@@ -199,6 +202,14 @@
     <!-- end footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init( {
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxlBApkN-XmXig0YHBeKKFGSm-uO-L4EKnR_XUguqpSNrhh-E9tf_7itBuhwGxxhj2R/exec";
